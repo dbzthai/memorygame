@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Quest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Memory Quest</h1>
+    <div id="level-selector">
+      <button onclick="startGame('easy')">ง่าย</button>
+      <button onclick="startGame('medium')">ปานกลาง</button>
+      <button onclick="startGame('hard')">ยาก</button>
+      <button onclick="startGame('epic')">มหากาพย์</button>
+      <button onclick="startGame('legendary')">ตำนาน</button>
+    </div>
+    <div id="stats" class="hidden">
+      <div>คะแนน: <span id="score">0</span></div>
+      <div>เวลา: <span id="timer">0</span> วินาที</div>
+    </div>
+    <div id="board" class="board"></div>
+    <div id="result" class="hidden">
+      <h2 id="result-message"></h2>
+      <button onclick="restartGame()">เล่นอีกครั้ง</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

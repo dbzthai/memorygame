@@ -1,0 +1,55 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(#89f7fe, #66a6ff);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+#level-selector button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffcc00;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#level-selector button:hover {
+  background-color: #ff9900;
+}
+.board {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  gap: 10px;
+}
+.card {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  user-select: none;
+}
+.card.matched {
+  background: lightgreen;
+}
+.hidden {
+  display: none;
+}
+#stats {
+  margin-top: 10px;
+  color: #fff;
+}
